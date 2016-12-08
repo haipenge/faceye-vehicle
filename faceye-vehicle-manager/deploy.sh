@@ -1,6 +1,6 @@
 ROOT=$(dirname $(cd "$(dirname "$0")";pwd))
 DEPLOY_PATH='/app/resin/resin-search-manager'
-RESIN_HOME='/data/deploy/faceye-search-manager'
+RESIN_HOME='/data/deploy/faceye-vehicle'
 cd $ROOT
 git pull
 cd $ROOT/faceye-vehicle-entity
