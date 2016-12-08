@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 模块:vehicle 业务对像:Area 管理后台 tiles模板配置 -->
+    <!-- 作者:haipege -->
+    <!-- Area 管理 首页(列表页) -->
+	<definition name="vehicle.area.mobile.home" extends="default.mobile">
+	    <put-attribute name="default-center" value="/component/vehicle/area/area_center.jsp"></put-attribute>
+	</definition>
+	<!-- Area 新增,编辑页面 -->
+	<definition name="vehicle.area.mobile.update" extends="default.simple">
+	     <put-attribute name="default-center" value="/component/vehicle/area/area_update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Area 明细页 -->
+	<definition name="vehicle.area.mobile.detail" extends="default.simple">
+	    <put-attribute name="default-center" value="/component/vehicle/area/area_detail.jsp"></put-attribute>
+	</definition>
+	
+	
+</tiles-definitions>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 模块:车辆 - vehicle : 业务对像:电动车颜色 - VehicleColor, 管理后台 tiles模板配置 -->
+    <!-- 作者:haipenge -->
+    <!-- 创建日期:2016-8-4 14:26:36 -->
+    <!-- 电动车颜色 : VehicleColor 管理 首页(列表页) -->
+	<definition name="vehicle.vehicleColor.manager" extends="default.manager">
+	    <put-attribute name="default-center" value="vehicle.vehicleColor.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.vehicleColor.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/vehicleColor/vehicleColor_center.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 电动车颜色 新增,编辑页面 -->
+	<definition name="vehicle.vehicleColor.update" extends="default.manager">
+	    <put-attribute name="default-center" value="vehicle.vehicleColor.update.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.vehicleColor.update.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/vehicleColor/vehicleColor_update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 电动车颜色 明细页 -->
+	<definition name="vehicle.vehicleColor.detail" extends="default.manager">
+	    <put-attribute name="default-center" value="vehicle.vehicleColor.detail.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.vehicleColor.detail.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/vehicleColor/vehicleColor_detail.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>

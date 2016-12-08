@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 模块:车辆 - vehicle : 业务对像:车牌 - LicensePlate, 管理后台 tiles模板配置 -->
+    <!-- 作者:haipenge -->
+    <!-- 创建日期:2016-8-4 14:26:36 -->
+    <!-- 车牌 : LicensePlate 管理 首页(列表页) -->
+	<definition name="vehicle.licensePlate.manager" extends="default.manager">
+	    <put-attribute name="default-center" value="vehicle.licensePlate.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.licensePlate.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/licensePlate/licensePlate_center.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 车牌 新增,编辑页面 -->
+	<definition name="vehicle.licensePlate.update" extends="default.manager">
+	    <put-attribute name="default-center" value="vehicle.licensePlate.update.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.licensePlate.update.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/licensePlate/licensePlate_update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 车牌 明细页 -->
+	<definition name="vehicle.licensePlate.detail" extends="default.manager">
+	    <put-attribute name="default-center" value="vehicle.licensePlate.detail.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.licensePlate.detail.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/licensePlate/licensePlate_detail.jsp"></put-attribute>
+	</definition>
+	<!-- 生成车牌 -->
+   <definition name="vehicle.licensePlate.generate" extends="default.manager">
+     <put-attribute name="default-center" value="vehicle.licensePlate.generate.center"></put-attribute>
+   </definition>	
+   <definition name="vehicle.licensePlate.generate.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/licensePlate/licensePlate_generate.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 上牌 -->
+	<definition name="vehicle.licensePlate.distribute" extends="default.manager">
+     <put-attribute name="default-center" value="vehicle.licensePlate.distribute.center"></put-attribute>
+   </definition>	
+   <definition name="vehicle.licensePlate.distribute.center" extends="default.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/licensePlate/licensePlate_distribute.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>

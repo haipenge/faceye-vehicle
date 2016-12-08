@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 模块:vehicle 业务对像:ScanLog 管理后台 tiles模板配置 -->
+    <!-- 作者:haipege -->
+    <!-- ScanLog 管理 首页(列表页) -->
+	<definition name="vehicle.scanLog.web.home" extends="default.web">
+	    <put-attribute name="default-center" value="vehicle.scanLog.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.scanLog.web.center" extends="default.web.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/scanLog/scanLog_center.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ScanLog 新增,编辑页面 -->
+	<definition name="vehicle.scanLog.web.update" extends="default.web">
+	    <put-attribute name="default-center" value="vehicle.scanLog.update.web.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.scanLog.update.web.center" extends="default.web.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/scanLog/scanLog_update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- ScanLog 明细页 -->
+	<definition name="vehicle.scanLog.web.detail" extends="default.web">
+	    <put-attribute name="default-center" value="vehicle.scanLog.detail.web.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.scanLog.detail.web.center" extends="default.web.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/scanLog/scanLog_detail.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 模块:vehicle 业务对像:Area 管理后台 tiles模板配置 -->
+    <!-- 作者:haipege -->
+    <!-- Area 管理 首页(列表页) -->
+	<definition name="vehicle.area.web.home" extends="default.web">
+	    <put-attribute name="default-center" value="vehicle.area.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.area.web.center" extends="default.web.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/area/area_center.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Area 新增,编辑页面 -->
+	<definition name="vehicle.area.web.update" extends="default.web">
+	    <put-attribute name="default-center" value="vehicle.area.update.web.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.area.update.web.center" extends="default.web.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/area/area_update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- Area 明细页 -->
+	<definition name="vehicle.area.web.detail" extends="default.web">
+	    <put-attribute name="default-center" value="vehicle.area.detail.web.center"></put-attribute>
+	</definition>
+	<definition name="vehicle.area.detail.web.center" extends="default.web.center">
+	    <put-attribute name="default-center-right" value="/component/vehicle/area/area_detail.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>

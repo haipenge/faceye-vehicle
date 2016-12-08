@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 模块:车辆 - vehicle : 业务对像:品牌 - Brand,web tiles模板配置 -->
+    <!-- 作者:haipenge -->
+    <!-- 创建日期:2016-8-4 14:26:38 -->
+    <!-- 品牌 : Brand web 首页(列表页) -->
+	<definition name="vehicle.brand.mobile.home" extends="default.mobile">
+	    <put-attribute name="default-center" value="/component/vehicle/brand/brand_center.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 品牌 新增,编辑页面 -->
+	<definition name="vehicle.brand.mobile.update" extends="default.simple">
+	    <put-attribute name="default-center" value="/component/vehicle/brand/brand_update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 品牌 明细页 -->
+	<definition name="vehicle.brand.mobile.detail" extends="default.simple">
+	    <put-attribute name="default-center" value="/component/vehicle/brand/brand_detail.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>

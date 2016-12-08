@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <!-- 模块:车辆 - vehicle : 业务对像:车牌 - LicensePlate,web tiles模板配置 -->
+    <!-- 作者:haipenge -->
+    <!-- 创建日期:2016-8-4 14:26:36 -->
+    <!-- 车牌 : LicensePlate web 首页(列表页) -->
+	<definition name="vehicle.licensePlate.home" extends="default.web">
+	    <put-attribute name="default-center" value="/component/vehicle/licensePlate/licensePlate_center.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 车牌 新增,编辑页面 -->
+	<definition name="vehicle.licensePlate.update" extends="default.web">
+	    <put-attribute name="default-center" value="/component/vehicle/licensePlate/licensePlate_update.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 车牌 明细页 -->
+	<definition name="vehicle.licensePlate.detail" extends="default.web">
+	    <put-attribute name="default-center" value="/component/vehicle/licensePlate/licensePlate_detail.jsp"></put-attribute>
+	</definition>
+	
+</tiles-definitions>
