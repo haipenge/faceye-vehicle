@@ -395,7 +395,7 @@
 									<filtering>true</filtering>
 								</resource>
 								<resource>
-									<directory>../../faceye-security/faceye-security-manager-mongo/src/main/webapp</directory>
+									<directory>../../faceye-security-manager-mongo/faceye-security-manager-mongo/src/main/webapp</directory>
 								</resource>
 								<resource>
 									<directory>../../faceye-generate/faceye-generate-manager/src/main/webapp</directory>
@@ -442,7 +442,7 @@
 									<filtering>true</filtering>
 								</resource>
 								<resource>
-									<directory>../../faceye-security/faceye-security-manager-mongo/src/main/webapp</directory>
+									<directory>../../faceye-security-manager-mongo/faceye-security-manager-mongo/src/main/webapp</directory>
 								</resource>
 								<resource>
 									<directory>../../faceye-generate/faceye-generate-manager/src/main/webapp</directory>
@@ -493,7 +493,7 @@
 									<filtering>true</filtering>
 								</resource>
 								<resource>
-									<directory>../../faceye-security/faceye-security-manager-mongo/src/main/webapp</directory>
+									<directory>../../faceye-security-manager-mongo/faceye-security-manager-mongo/src/main/webapp</directory>
 								</resource>
 								<resource>
 									<directory>../../faceye-generate/faceye-generate-manager/src/main/webapp</directory>
