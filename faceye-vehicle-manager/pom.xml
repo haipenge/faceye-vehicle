@@ -109,7 +109,7 @@
 			<resource>
 				<directory>../../faceye-feature/src/main/resources</directory>
 				<includes>
-					<include>tiles/*</include>
+					<include>tiles/manager/*.*</include>
 				</includes>
 			</resource>
 			<resource>
